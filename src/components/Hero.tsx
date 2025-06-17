@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import myImage from './assets/IMG_1059.JPG';
 import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
 
 const Hero = () => {
@@ -262,7 +263,7 @@ const Hero = () => {
                   }}
                 >
                   <img
-                    src="/src/assets/IMG_1059.JPG"
+                    src={myImage}
                     alt="Sathsara Rasantha - Data Science Lead"
                     className="w-80 h-96 object-cover rounded-xl shadow-2xl"
                   />
