@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import emotioniseImg from '../assets/emotionise.png';
+import emotioniseDemo from '../assets/Emotionise AI Demo without commentary.mp4';
 import { ExternalLink, Github, Brain, MessageSquare, Briefcase, Zap, Eye } from 'lucide-react';
 import ProjectModal from './ProjectModal';
 
@@ -13,7 +15,7 @@ const Projects = () => {
       title: 'Emotionise - Emotional Text Enhancement',
       description: 'Emotionise AI is a cutting-edge “human‑trained” platform that infuses emails, messages, and support responses with emotional intelligence—ensuring communications feel empathetic and on‑brand. Developed for enterprise clients, it enhances team communication and user engagement by providing emotionally aware rewrites, personalized feedback, and explainable tone guidance.',
       detailedDescription: 'Working with the Emotionise AI team (developed by Emotionise, founded by Marie Toft and Tim Pat Dufficy), I led the technical development of EIMEAR—their Emotionally Intelligent Model. I helped architect the data pipelines, model training workflows, and integration landscape. Credit goes to Emotionise for spearheading the vision: “AI for Good—making AI more human, not human less.” Their platform empowers organizations to foster trust and connection while reducing churn and boosting engagement.',
-      image: 'src/assets/emotionise.png',
+      image: emotioniseImg,
       technologies: ['Python', 'OpenAI GPT-3', 'LLaMA-2', 'Huggingface', 'TensorFlow', 'PyTorch', 'LangChain', 'Weights & Biases', 'Azure Functions', 'AWS Sagemaker'],
       liveUrl: 'https://emotionise.ai/',
       githubUrl: '#',
@@ -23,7 +25,7 @@ const Projects = () => {
       duration: '8 months',
       teamSize: '6 members',
       role: 'AI Lead',
-      demoVideo: 'src/assets/Emotionise AI Demo without commentary.mp4', // Replace with actual demo video
+      demoVideo: emotioniseDemo, // Replace with actual demo video
       keyFeatures: [
         'Emotionally enhanced text rewriting and suggestions',
         'Fine-tuned Customer Support & HR models',
