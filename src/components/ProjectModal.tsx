@@ -1,6 +1,12 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, ExternalLink, Github, Calendar, Users, Target, Lightbulb, Play, Globe, ArrowUpRight } from 'lucide-react';
+import { X, ExternalLink, Github, Calendar, Users, Target, Lightbulb, Play, Globe, ArrowUpRight, BarChart3, TrendingUp, ImageIcon } from 'lucide-react';
+
+interface Visualization {
+  title: string;
+  description: string;
+  image: string;
+}
 
 interface Project {
   id: number;
@@ -22,6 +28,7 @@ interface Project {
   role?: string;
   keyFeatures?: string[];
   demoVideo?: string;
+  visualizations?: Visualization[];
 }
 
 interface ProjectModalProps {
@@ -200,7 +207,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
                   </motion.div>
                 </div>
 
-                {/* Demo Video Section */}
+                {/* Demo Video Section - Only show if demoVideo exists */}
                 {project.demoVideo && (
                   <motion.div
                     className="mb-8"
@@ -260,6 +267,145 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
                     >
                       Watch the live demonstration of {project.title} in action
                     </motion.p>
+                  </motion.div>
+                )}
+
+                {/* SARIMA Visualizations Section - Only show for Predictive Revenue Modeling project */}
+                {project.visualizations && (
+                  <motion.div
+                    className="mb-8"
+                    variants={itemVariants}
+                  >
+                    <motion.h3 
+                      className="text-xl font-bold text-gray-900 mb-6 flex items-center"
+                      initial={{ opacity: 0 }}
+                      whileInView={{ opacity: 1 }}
+                      transition={{ delay: 0.2 }}
+                      viewport={{ once: true }}
+                    >
+                      <BarChart3 className="mr-2 text-blue-500" size={20} />
+                      SARIMA Model Visualizations & Analytics
+                    </motion.h3>
+                    
+                    <motion.div 
+                      className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl p-6 border border-blue-100"
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.6 }}
+                      viewport={{ once: true }}
+                    >
+                      <div className="grid grid-cols-1 gap-8">
+                        {project.visualizations.map((viz, index) => (
+                          <motion.div
+                            key={index}
+                            className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ delay: index * 0.2 }}
+                            viewport={{ once: true }}
+                            whileHover={{ 
+                              scale: 1.02,
+                              transition: { duration: 0.3 }
+                            }}
+                          >
+                            {/* Visualization Image */}
+                            <div className="relative overflow-hidden">
+                              <motion.img
+                                src={viz.image}
+                                alt={viz.title}
+                                className="w-full h-auto object-contain bg-white"
+                                initial={{ scale: 1.1 }}
+                                whileInView={{ scale: 1 }}
+                                transition={{ duration: 0.5 }}
+                                viewport={{ once: true }}
+                              />
+                              <motion.div 
+                                className="absolute top-4 right-4"
+                                initial={{ opacity: 0, scale: 0.8 }}
+                                whileInView={{ opacity: 1, scale: 1 }}
+                                transition={{ delay: 0.3 }}
+                                viewport={{ once: true }}
+                              >
+                                <div className="bg-white/90 backdrop-blur-sm rounded-full p-2">
+                                  <ImageIcon className="text-blue-500" size={16} />
+                                </div>
+                              </motion.div>
+                            </div>
+                            
+                            {/* Visualization Details */}
+                            <div className="p-6">
+                              <motion.h4 
+                                className="text-lg font-bold text-gray-900 mb-3 flex items-center"
+                                initial={{ opacity: 0, x: -20 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                transition={{ delay: 0.4 }}
+                                viewport={{ once: true }}
+                              >
+                                <TrendingUp className="mr-2 text-blue-500" size={18} />
+                                {viz.title}
+                              </motion.h4>
+                              <motion.p 
+                                className="text-gray-600 leading-relaxed text-sm"
+                                initial={{ opacity: 0, x: -20 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                transition={{ delay: 0.5 }}
+                                viewport={{ once: true }}
+                              >
+                                {viz.description}
+                              </motion.p>
+                            </div>
+                          </motion.div>
+                        ))}
+                      </div>
+                      
+                      <motion.div 
+                        className="mt-8 p-6 bg-white/70 backdrop-blur-sm rounded-lg border border-blue-200"
+                        initial={{ opacity: 0, y: 10 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.8 }}
+                        viewport={{ once: true }}
+                      >
+                        <motion.div 
+                          className="flex items-start space-x-4"
+                          whileHover={{ scale: 1.02 }}
+                        >
+                          <motion.div 
+                            className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center flex-shrink-0"
+                            whileHover={{ 
+                              rotate: 5,
+                              scale: 1.1,
+                              transition: { duration: 0.2 }
+                            }}
+                          >
+                            <BarChart3 className="text-white" size={20} />
+                          </motion.div>
+                          <div>
+                            <motion.h5 
+                              className="text-lg font-bold text-gray-900 mb-2"
+                              initial={{ opacity: 0 }}
+                              whileInView={{ opacity: 1 }}
+                              transition={{ delay: 0.9 }}
+                              viewport={{ once: true }}
+                            >
+                              Advanced SARIMA Modeling Framework
+                            </motion.h5>
+                            <motion.p 
+                              className="text-sm text-gray-700"
+                              initial={{ opacity: 0 }}
+                              whileInView={{ opacity: 1 }}
+                              transition={{ delay: 1.0 }}
+                              viewport={{ once: true }}
+                            >
+                              <strong>Technical Implementation:</strong> These visualizations showcase sophisticated time series analysis using 
+                              SARIMA and SARIMAX models with automated hyperparameter optimization. The system performs comprehensive 
+                              model comparison using AIC, BIC, and RMSE metrics to ensure optimal forecasting accuracy across multiple 
+                              geographic markets. Each model incorporates seasonal decomposition, trend analysis, and confidence interval 
+                              calculations for robust revenue predictions.
+                            </motion.p>
+                          </div>
+                        </motion.div>
+                      </motion.div>
+                    </motion.div>
                   </motion.div>
                 )}
 
