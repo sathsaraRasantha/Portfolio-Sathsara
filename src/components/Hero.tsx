@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import myImage from '../assets/IMG_1059.JPG';
+import myImage from '../assets/image0.jpeg';
 import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
 
 const Hero = () => {
