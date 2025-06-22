@@ -59,7 +59,7 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: 'Geminate - Virtual CFO Platform',
+      title: 'InsureAI - Intelligent assistant for insurance policy verification and expert consultation',
       description: 'AI-powered virtual CFO platform automating financial communication with email summarization, document analysis, and budget planning.',
       detailedDescription: 'Led the AI development of a comprehensive virtual CFO platform designed to automate financial communication within organizations. The system handles complex tasks including financial email summarization, intelligent feedback generation, document analysis, and iterative budget planning based on departmental inputs and organizational KPIs.',
       image: 'https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -101,7 +101,7 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: 'KAYA - AI Sales Training Platform',
+      title: 'Bella Vista - Customer Support voice agent for restaurants',
       description: 'Voice-based AI training platform simulating real-world customer interactions for automotive sales representatives.',
       detailedDescription: 'Developed an innovative AI-driven voice-based training platform specifically designed to simulate real-world customer interactions for automotive sales representatives. The comprehensive system includes personalized training programs, QR-based session access, automatic assessment generation, and real-time feedback using advanced transcription analysis.',
       image: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -210,7 +210,7 @@ const Projects = () => {
     },
     {
       id: 5,
-      title: 'Computer Vision Solutions',
+      title: 'Real-Time Workout Pose Estimation and Feedback System',
       description: 'Advanced object detection and classification algorithms for industrial applications with optimized performance.',
       detailedDescription: 'Developed state-of-the-art computer vision solutions featuring advanced object detection and classification algorithms specifically designed for industrial applications. The project involved implementing cutting-edge deep learning models with heavily optimized performance for real-time production deployment in challenging industrial environments.',
       image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -252,7 +252,7 @@ const Projects = () => {
     },
     {
       id: 6,
-      title: 'NLP Analytics Platform',
+      title: 'Sport Analytics with Computer vision',
       description: 'Comprehensive NLP-based data analysis platform with automated insights generation and sentiment analysis.',
       detailedDescription: 'Built a comprehensive NLP-based data analysis platform featuring automated insights generation, advanced sentiment analysis, and sophisticated text classification capabilities. The platform serves as a powerful business intelligence tool, enabling organizations to extract actionable insights from large volumes of textual data.',
       image: 'https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=800',
