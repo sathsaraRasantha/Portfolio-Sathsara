@@ -208,90 +208,90 @@ const Projects = () => {
         }
       ]
     },
-    {
-      id: 5,
-      title: 'Real-Time Workout Pose Estimation and Feedback System',
-      description: 'Advanced object detection and classification algorithms for industrial applications with optimized performance.',
-      detailedDescription: 'Developed state-of-the-art computer vision solutions featuring advanced object detection and classification algorithms specifically designed for industrial applications. The project involved implementing cutting-edge deep learning models with heavily optimized performance for real-time production deployment in challenging industrial environments.',
-      image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['Python', 'TensorFlow', 'PyTorch', 'OpenCV', 'YOLO', 'Docker', 'CUDA', 'TensorRT', 'Flask'],
-      liveUrl: '#',
-      githubUrl: '#',
-      category: 'Computer Vision',
-      icon: Brain,
-      duration: '6 months',
-      teamSize: '3 members',
-      role: 'Computer Vision Engineer',
-      demoVideo: 'https://www.youtube.com/embed/dQw4w9WgXcQ', // Replace with actual demo video
-      keyFeatures: [
-        'Real-time object detection and tracking',
-        'Multi-class classification with high accuracy',
-        'Edge deployment optimization',
-        'Custom model training pipelines',
-        'Performance monitoring and analytics',
-        'Scalable inference architecture'
-      ],
-      challenges: [
-        'Achieving real-time performance in resource-constrained environments',
-        'Handling varying lighting and environmental conditions',
-        'Maintaining accuracy across different object scales and orientations',
-        'Optimizing models for edge deployment'
-      ],
-      solutions: [
-        'Implemented model quantization and pruning techniques',
-        'Developed robust data augmentation strategies',
-        'Built multi-scale training and inference pipelines',
-        'Created efficient model serving architecture with TensorRT'
-      ],
-      impact: [
-        'Achieved 95% detection accuracy in production',
-        'Reduced processing time by 60%',
-        'Improved quality control efficiency by 80%',
-        'Successfully deployed across 5 industrial facilities'
-      ]
-    },
-    {
-      id: 6,
-      title: 'Sport Analytics with Computer vision',
-      description: 'Comprehensive NLP-based data analysis platform with automated insights generation and sentiment analysis.',
-      detailedDescription: 'Built a comprehensive NLP-based data analysis platform featuring automated insights generation, advanced sentiment analysis, and sophisticated text classification capabilities. The platform serves as a powerful business intelligence tool, enabling organizations to extract actionable insights from large volumes of textual data.',
-      image: 'https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['Python', 'spaCy', 'NLTK', 'Transformers', 'FastAPI', 'Redis', 'Elasticsearch', 'Plotly', 'Streamlit'],
-      liveUrl: '#',
-      githubUrl: '#',
-      category: 'NLP/Analytics',
-      icon: MessageSquare,
-      duration: '5 months',
-      teamSize: '4 members',
-      role: 'NLP Engineer & Data Scientist',
-      demoVideo: 'https://www.youtube.com/embed/dQw4w9WgXcQ', // Replace with actual demo video
-      keyFeatures: [
-        'Multi-language sentiment analysis',
-        'Automated topic modeling and clustering',
-        'Real-time text classification',
-        'Interactive analytics dashboard',
-        'Custom entity recognition',
-        'Trend analysis and forecasting'
-      ],
-      challenges: [
-        'Processing large volumes of text data efficiently',
-        'Handling multiple languages and dialects',
-        'Ensuring consistent performance across different text domains',
-        'Creating intuitive visualizations for complex NLP results'
-      ],
-      solutions: [
-        'Implemented distributed processing with Redis and Elasticsearch',
-        'Developed multi-language model ensemble approaches',
-        'Built domain adaptation techniques for model robustness',
-        'Created interactive dashboards with real-time updates'
-      ],
-      impact: [
-        'Processed 1M+ documents with 92% accuracy',
-        'Reduced manual analysis time by 85%',
-        'Improved business decision-making speed by 60%',
-        'Generated actionable insights for 20+ business units'
-      ]
-    }
+    // {
+    //   id: 5,
+    //   title: 'Real-Time Workout Pose Estimation and Feedback System',
+    //   description: 'Advanced object detection and classification algorithms for industrial applications with optimized performance.',
+    //   detailedDescription: 'Developed state-of-the-art computer vision solutions featuring advanced object detection and classification algorithms specifically designed for industrial applications. The project involved implementing cutting-edge deep learning models with heavily optimized performance for real-time production deployment in challenging industrial environments.',
+    //   image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800',
+    //   technologies: ['Python', 'TensorFlow', 'PyTorch', 'OpenCV', 'YOLO', 'Docker', 'CUDA', 'TensorRT', 'Flask'],
+    //   liveUrl: '#',
+    //   githubUrl: '#',
+    //   category: 'Computer Vision',
+    //   icon: Brain,
+    //   duration: '6 months',
+    //   teamSize: '3 members',
+    //   role: 'Computer Vision Engineer',
+    //   demoVideo: 'https://www.youtube.com/embed/dQw4w9WgXcQ', // Replace with actual demo video
+    //   keyFeatures: [
+    //     'Real-time object detection and tracking',
+    //     'Multi-class classification with high accuracy',
+    //     'Edge deployment optimization',
+    //     'Custom model training pipelines',
+    //     'Performance monitoring and analytics',
+    //     'Scalable inference architecture'
+    //   ],
+    //   challenges: [
+    //     'Achieving real-time performance in resource-constrained environments',
+    //     'Handling varying lighting and environmental conditions',
+    //     'Maintaining accuracy across different object scales and orientations',
+    //     'Optimizing models for edge deployment'
+    //   ],
+    //   solutions: [
+    //     'Implemented model quantization and pruning techniques',
+    //     'Developed robust data augmentation strategies',
+    //     'Built multi-scale training and inference pipelines',
+    //     'Created efficient model serving architecture with TensorRT'
+    //   ],
+    //   impact: [
+    //     'Achieved 95% detection accuracy in production',
+    //     'Reduced processing time by 60%',
+    //     'Improved quality control efficiency by 80%',
+    //     'Successfully deployed across 5 industrial facilities'
+    //   ]
+    // },
+    // {
+    //   id: 6,
+    //   title: 'Sport Analytics with Computer vision',
+    //   description: 'Comprehensive NLP-based data analysis platform with automated insights generation and sentiment analysis.',
+    //   detailedDescription: 'Built a comprehensive NLP-based data analysis platform featuring automated insights generation, advanced sentiment analysis, and sophisticated text classification capabilities. The platform serves as a powerful business intelligence tool, enabling organizations to extract actionable insights from large volumes of textual data.',
+    //   image: 'https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=800',
+    //   technologies: ['Python', 'spaCy', 'NLTK', 'Transformers', 'FastAPI', 'Redis', 'Elasticsearch', 'Plotly', 'Streamlit'],
+    //   liveUrl: '#',
+    //   githubUrl: '#',
+    //   category: 'NLP/Analytics',
+    //   icon: MessageSquare,
+    //   duration: '5 months',
+    //   teamSize: '4 members',
+    //   role: 'NLP Engineer & Data Scientist',
+    //   demoVideo: 'https://www.youtube.com/embed/dQw4w9WgXcQ', // Replace with actual demo video
+    //   keyFeatures: [
+    //     'Multi-language sentiment analysis',
+    //     'Automated topic modeling and clustering',
+    //     'Real-time text classification',
+    //     'Interactive analytics dashboard',
+    //     'Custom entity recognition',
+    //     'Trend analysis and forecasting'
+    //   ],
+    //   challenges: [
+    //     'Processing large volumes of text data efficiently',
+    //     'Handling multiple languages and dialects',
+    //     'Ensuring consistent performance across different text domains',
+    //     'Creating intuitive visualizations for complex NLP results'
+    //   ],
+    //   solutions: [
+    //     'Implemented distributed processing with Redis and Elasticsearch',
+    //     'Developed multi-language model ensemble approaches',
+    //     'Built domain adaptation techniques for model robustness',
+    //     'Created interactive dashboards with real-time updates'
+    //   ],
+    //   impact: [
+    //     'Processed 1M+ documents with 92% accuracy',
+    //     'Reduced manual analysis time by 85%',
+    //     'Improved business decision-making speed by 60%',
+    //     'Generated actionable insights for 20+ business units'
+    //   ]
+    // }
   ];
 
   const handleProjectClick = (project) => {
